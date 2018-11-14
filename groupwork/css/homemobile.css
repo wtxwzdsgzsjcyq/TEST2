@@ -1,0 +1,1029 @@
+/* common */
+html,body{
+	color:#3C362E;
+	background: url(../images/bg.jpg);
+}
+.menu>li>a,.submenu>li>a{
+	font-family:'minijianchusong2bcc1448c4e52';
+}
+*{
+	outline: none;
+}
+.clear{
+	clear: both;
+}
+ul,li{
+	list-style: none;
+}
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+.outer{
+	background: url(../images/detail_bg.png);
+	padding-top: 67px;	
+	overflow: hidden;
+}
+.outer .label{
+	padding: .3em .6em;
+}
+.outer .panel{
+	border:none;
+	background:#fff;
+	
+}
+.outer .row{
+	margin:0;
+}
+.col-md-3{
+	display: none;
+
+}
+.col-md-6{
+	padding:0 15px;	
+}
+.login-top{
+	height: 46px;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	font-family: Arial,sans-serif;
+	box-shadow: 0 0 6px #ccc;
+	border-bottom: 1px solid rgba(0,0,0,0.15);
+	z-index: 30;
+	color: #292f33;
+	display: none;
+}
+.login-top form{
+	margin-top: 5px;
+	margin-right:10px;
+	padding: 0;
+}
+.login-top a{
+	color: #292f33;
+	text-decoration: none;
+	margin: 0 3px;
+}
+.input-group-addon{
+	background: none;
+}
+.head-link{
+	height: 45px;
+	font-size: 13px;
+	color: #292f33;
+	margin-right: 10px;
+}
+.head-link-now{
+	border-bottom: 3px solid #337ab7;
+}
+.head-link:hover{
+	color: #337ab7
+}
+.avatar{
+	width: 30px;
+	height: 30px;
+	margin: 7px 10px;
+	border-radius: 5px;
+}
+.search-btn{
+	border: none;
+  	background-color: #fff;
+  	padding: 0;
+}
+/* 手机导航 */
+.header {
+	position: fixed;
+	z-index: 30;
+	width: 100%;
+	height: 46px;
+  	padding: 6px 0;
+	background: #F5F7FA;
+	border-bottom: 3px solid #E6E9ED;
+	top: 0;
+}
+.header-main {
+	position: relative;
+	margin: 0 auto;
+	padding: 0 20px 0 10px;
+	height: 2em;
+	max-width: 960px;
+	line-height: 2.5em;
+}
+.header-menu {
+	display: none;
+	float: left;
+	margin-left: 1em;
+	width: 44px;
+	height: 34px;
+	line-height: 2;
+	color: #AAA;
+	background: url("../images/website/menu-top.png")
+}
+.header-container {
+	height: 100%;
+	position: fixed;
+	top: 46px;
+	left: 0;
+	overflow-y: auto;
+	display: none;
+}
+.header-nav {
+	
+	float: left;
+	margin: 0 1em 0 0;
+	padding: 0;
+	overflow: hidden;
+	background: url("../images/website/Mob_bg.png")repeat-y;
+	background-size: 100%;
+}
+.header-nav li {
+	float: left;
+	display: block;
+}
+
+.header-nav a {
+	line-height: 2em;
+	display: block;
+	color: #3C362E;
+
+}
+.row{
+	-webkit-transition: -webkit-transform .5s;
+	-webkit-transition: transform .5s;
+	transition: -webkit-transform .5s;
+	transition: transform .5s;
+}
+
+.header-menu {
+	display: block;
+}
+.header-container{
+	display: block;
+}
+.header-nav {
+	width: 0;
+	height: 0;
+	-webkit-transition: width .5s;
+	transition: width .5s;
+}
+.menu-open .header-nav {
+	display: block;
+	margin-right: 0;
+	width: 210px;
+	height: auto;
+	text-align: center;
+	padding: 0px 22px 31px 0;
+	height:120%;
+}
+.menu-open .header-nav ul {
+	padding-left: 40px;
+}
+.menu-open .header-nav li {
+	float: none;
+	margin: 4px 0;
+}
+.menu-open .header-nav li a {
+	padding: 9px 0 9px 30px;
+}
+.menu-open .header-nav ul li a{
+	background: url("../images/website/submenu.png")left top;
+	background-size: 150px 70px;
+	padding: 2px;
+}
+.menu-open .header-nav ul li a:hover{
+	background: url("../images/website/submenu.png")left bottom;
+	background-size: 150px 65px;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px #FFF, -1px -1px 2px #FFF, 1px -1px 2px #FFF, -1px 1px 2px #FFF;
+
+}
+.menu-open .row {
+	-webkit-transform: translateX(210px);
+	-moz-transform: translateX(210px);
+	transform: translateX(210px);
+}
+
+/* banner */
+.banner{
+	margin:10px 0;
+	border: 4px double #AFA588;
+	background-color: #fff;
+	display: none;
+}
+
+/* 超小屏幕（手机，小于 768px） */
+/* 没有任何媒体查询相关的代码，因为这在 Bootstrap 中是默认的（还记得 Bootstrap 是移动设备优先的吗？） */
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (max-width: 450px){
+	.container{padding-top:46px;padding-left: 0px;padding-right: 0px;}
+	/*.slider li{height:97px !important;}*/
+	.articlelist{border-left:0 !important;border-right:0 !important;}
+	div#jp-app_info ,div#my-app_info{
+    width:94%!important;}
+}
+@media (min-width: 800px) {
+	.outer{
+		width:970px;
+	}
+	.col-md-3 {
+		width: 25%;
+		display: block;
+	}
+
+	.col-md-6 {
+		width: 50%;
+		padding: 0;
+	}
+	.col-md-9{
+		width: 75%;
+	}
+	.col-md-3,  .col-md-6,.col-md-9{
+		float: left;
+	}
+	.submenu{
+		margin-left: 27px; 
+	}
+	.submenu>li>a {
+		padding: 13px 15px 13px 43px;
+	}
+	.topfixed{
+		position:fixed;
+		top:60px;
+		z-index:1;
+		width:205px;
+	}
+	#headertop {
+		display: none;
+	}
+	.banner,.login-top{
+		display: block;
+	}
+	.outer{
+		padding-top: 0;
+	}
+
+	#nav-hide{
+		display: none;
+	}	
+	#row-move{
+		-webkit-transform:none;
+		-moz-transform: none;
+		transform: none;
+	}
+	.navi{
+		margin:0;
+	}
+	
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+	.outer{
+		width: 970px;
+		padding-top: 50px;
+	}
+	.col-md-3 {
+		width: 25%;
+		display: block;
+	}
+	
+	.col-md-6{
+		padding: 0;
+	}
+
+	.submenu{
+		margin-left: 27px; 
+	}
+	.submenu>li>a {
+		padding: 13px 15px 13px 43px;
+	}
+	.topfixed{
+		position:fixed;
+		top:60px;
+		/*z-index:300;*/
+		width:205px;
+	}
+	#headertop {
+		display: none;
+	}
+	.banner,.login-top{
+		display: block;
+	}
+	#nav-hide{
+		display: none;
+	}
+	#row-move{
+		-webkit-transform:none;
+		-moz-transform: none;
+		transform: none;
+	}
+	.navi{
+		margin:0;
+	}
+	
+
+}
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+
+	.outer{
+		width: 1170px;
+		padding-top: 50px;
+	}
+	.col-md-3 {
+		width: 25%;
+		display: block;
+	}
+	.col-md-6{
+		padding: 0;
+	}
+	.submenu{
+		margin-left: 64px; 
+	}
+	.submenu>li>a {
+		padding: 13px 15px;
+	}
+	.topfixed{
+		position:fixed;
+		top:60px;
+		/*z-index:300;*/
+		width:255px;
+	}
+	#headertop {
+		display: none;
+	}
+	.banner,.login-top{
+		display: block;
+	}
+
+	#nav-hide{
+		display: none;
+	}
+	#row-move{
+		-webkit-transform:none;
+		-moz-transform: none;
+		transform: none;
+	}
+	.navi{
+		margin-right: -15px;
+		margin-left: 15px;
+	}
+	
+}
+
+
+/* 第一列 */
+
+.navi li{
+	margin: 5px 0;
+	text-align: center;
+}
+.navi a{
+	color:#3C362E!important;
+}
+.menu li{
+	margin:0;
+}
+.menu>li>a{
+	padding: 18px 15px 18px 41px;
+	font-size: 16px;
+}
+.submenu{
+	  width: auto;
+	  }
+.submenu>li{
+	margin: 0;
+}
+.submenu>li+li{
+	margin: 0;
+}
+.submenu>li>a{
+	padding: 13px 15px 14px 35px;
+}
+.submenu a:hover{
+	text-shadow:1px 1px 2px #FFF, -1px -1px 2px #FFF, 1px -1px 2px #FFF, -1px 1px 2px #FFF;
+}
+li>a.gamevbg{
+	background:  url(../images/website/menu-gamev.png),url(../images/website/menubg.png);
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.gamevbg:hover{
+	background:  url(../images/website/menu-gamev.png),url(../images/website/menubg.png)0% 95%;
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.updatebg{
+	background:  url(../images/website/menu-update.png),url(../images/website/menubg.png);
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.updatebg:hover{
+	background:  url(../images/website/menu-update.png),url(../images/website/menubg.png)0% 95%;
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.comicbg{
+	background:  url(../images/website/menu-comic.png),url(../images/website/menubg.png);
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.comicbg:hover{
+	background:  url(../images/website/menu-comic.png),url(../images/website/menubg.png)0% 95%;
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.guidebg{
+	background:  url(../images/website/menu-guide.png),url(../images/website/menubg.png);
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.guidebg:hover{
+	background:  url(../images/website/menu-guide.png),url(../images/website/menubg.png)0% 95%;
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.equipbg{
+	background:  url(../images/website/menu-equip.png),url(../images/website/menubg.png);
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.equipbg:hover{
+	background:  url(../images/website/menu-equip.png),url(../images/website/menubg.png)0% 95%;
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.materialbg{
+	background:  url(../images/website/menu-material.png),url(../images/website/menubg.png);
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.materialbg:hover{
+	background:  url(../images/website/menu-material.png),url(../images/website/menubg.png)0% 95%;
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.raidersbg{
+	background:  url(../images/website/menu-raiders.png),url(../images/website/menubg.png);
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.raidersbg:hover{
+	background:  url(../images/website/menu-raiders.png),url(../images/website/menubg.png)0% 95%;
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.freshmanbg{
+	background:  url(../images/website/menu-freshman.png),url(../images/website/menubg.png);
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.freshmanbg:hover{
+	background:  url(../images/website/menu-freshman.png),url(../images/website/menubg.png)0% 95%;
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.introbg{
+	background:  url(../images/website/menu-intro.png),url(../images/website/menubg.png);
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.introbg:hover{
+	background:  url(../images/website/menu-intro.png),url(../images/website/menubg.png)0% 95%;
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.readbg{
+	background:  url(../images/website/menu-read.png),url(../images/website/menubg.png);
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.readbg:hover{
+	background:  url(../images/website/menu-read.png),url(../images/website/menubg.png)0% 95%;
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.capsulebg{
+	background:  url(../images/website/menu-capsule.png),url(../images/website/menubg.png);
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.capsulebg:hover{
+	background:  url(../images/website/menu-capsule.png),url(../images/website/menubg.png)0% 95%;
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.mapbg{
+	background:  url(../images/website/menu-map.png),url(../images/website/menubg.png);
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.mapbg:hover{
+	background:  url(../images/website/menu-map.png),url(../images/website/menubg.png)0% 95%;
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.teambg{
+	background:  url(../images/website/menu-team.png),url(../images/website/menubg.png);
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.teambg:hover{
+	background:  url(../images/website/menu-team.png),url(../images/website/menubg.png)0% 95%;
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.masterbg{
+	background:  url(../images/website/menu-master.png),url(../images/website/menubg.png);
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.masterbg:hover{
+	background:  url(../images/website/menu-master.png),url(../images/website/menubg.png)0% 95%;
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.comicsbg{
+	background:  url(../images/website/menu-comics.png),url(../images/website/menubg.png);
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+li>a.comicsbg:hover{
+	background:  url(../images/website/menu-comics.png),url(../images/website/menubg.png)0% 95%;
+	background-size: 47px 49px, 183px 98px;
+	background-repeat: no-repeat, no-repeat;
+}
+.menu1 a{
+	background: transparent url(../images/website/menu1.png) no-repeat center;
+	background-size: contain;
+}
+.menu2 a{
+	background: transparent url(../images/website/menu2.png) no-repeat center;
+	background-size: contain;
+}
+.menu3 a{
+	background: transparent url(../images/website/menu3.png) no-repeat center;
+	background-size: contain;
+}
+
+.menu li>a:focus, .menu li>a:hover {
+	text-decoration: none;
+	background-color: transparent;
+}
+/* 第二列index */
+.placard{
+	width:96%;
+	margin:2%
+}
+.WeekLv{
+	background:#fff;border:#111 1px solid;font-size:12px;width:100%;text-align:center
+}
+.WeekLv td{
+	border:#666 1px solid;
+	padding:5px 0
+}
+.WeekLv th{
+	border:#666 1px solid;
+	padding:5px 0;
+	color: #00C2FD;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 1px 1px 1px #000000;
+}
+.DanShu{
+	background:#ECF2F3;
+}
+table.download{
+	width: 96%;
+	margin:0 2% 1%;
+	border: #CECECE 1px solid;
+	position: relative;
+	font-size: 12px;
+}
+span.downloadspan{
+	position: relative;
+    top: 10px;
+    padding: 0 10px;
+    background: #fff;
+    color: #dc6e4b;
+    font-size: 16px;
+    z-index: 2;
+    left: 50%;
+    width: 144px;
+    display: inline-block;
+    margin-left: -72px;
+}
+table.download tr:first-child td{
+	padding-top: 15px;
+}
+table.download td{
+    padding: 5px 10px;
+}
+table.download td:nth-child(2n+1){
+	border-right: #CECECE 1px solid;
+}
+table.download td a{
+    display: inline-block;
+    margin:2px 4px;
+    padding: 3px 10px;
+    color: #2b2b2b;
+    white-space: nowrap;
+    background: #fff url(../images/website/tagbg.png) no-repeat right;
+    background-size: contain;
+    border: 1px solid #BCB2A3;
+    text-decoration: none;
+}
+table.download td a:hover{
+	border:1px solid #7F776A;
+}
+.ios-app,.android-app{
+	width: 90%;
+	text-align: center;
+}
+table.download td a.ios-app{
+    background: url(../images/website/IOS_Logo.png) no-repeat 8px ,#fff url(../images/website/tagbg.png) no-repeat right;
+    background-size: 17%,contain;
+    padding-left: 30px;
+}
+table.download td a.android-app{
+    background: url(../images/website/Android_Logo.png) no-repeat 8px ,#fff url(../images/website/tagbg.png) no-repeat right;
+    background-size: 17%,contain;
+    padding-left: 30px;
+}
+.for-freshman{
+	margin:0 2%;
+}
+.for-freshman header{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 8px 0;
+    text-align: center;
+    background:#F5F2E4;
+
+}
+.for-freshman table{
+	background-color: #f8f8f8;
+	width: 100%;
+}
+.for-freshman table tr{
+	border-bottom: 1px dotted #e5e5e5;
+}
+.for-freshman table th,.for-freshman table td{
+	padding: 10px 0 10px 10px;
+}
+.for-freshman table a>img{
+	width: 60px;
+}
+.for-freshman table ul{
+	padding:0;
+	display: initial;
+}
+.for-freshman table ul>li{
+	display: inline-block;
+}
+.for-freshman table td a{
+	background-color: #FFF;
+    border-radius: 2px;
+    border: 1px solid #e5e5e5;
+    padding: 2px 6px;
+	font-size: 13px;
+	text-decoration: none;
+    margin: 2px 0;
+    display: inline-block;
+    transition: all .3s;
+}
+.for-freshman table td a:hover{
+	background-color: #f8f8f8;
+}
+.tablehead{
+	background:url("../images/tableBg.png");
+	color:#fff;
+	padding:8px;
+	text-shadow: 1px 1px 4px #000000;    
+	font-weight: bold;
+}
+.articlelist{
+	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+	box-shadow: 0 0 5px #ccc;
+	border: 4px double #AFA588;
+	background-color: #fff;
+}
+.articlelist li{
+	border: none;
+	margin-bottom: 0;
+}
+
+.articlelist .bottom-line{
+	background: #fff url(../images/website/border.png) center center no-repeat;
+	height:15px;
+	background-size: 100% 100%;
+}
+.bottom-line:last-child{
+	display: none;
+}
+.articlelist-item-head h4{
+	color:#fff;
+	padding: 16px 0 16px 50px;
+}
+.articlelist-item-head span{
+
+}
+
+.articlelist-item-body img{
+	width: 100%;
+	height: auto;
+}
+.articlelist-item-body p{
+	margin: 15px 0 5px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.articlelist-item-footer{
+	margin-top: 5px;
+	text-align: center;
+
+}
+
+.articlelist-item-footer div{
+	margin: 10px 0 0 ;
+	text-align: left;
+}
+
+.articlelist-item-footer>div>a>span{
+	padding: 2px 10px;
+	color: #FFFFFF;
+	border: 4px double #BCB2A3;
+	font-size: 12px;
+	background-color: #205D90;
+}
+.read{
+	border: none;
+	color: #fff;
+	padding: 10px 30px;
+	background: url(../images/website/read.png) no-repeat;
+	background-size: contain;
+	transition: background 0.3s ease-in-out;
+	-moz-transition: background 0.3s ease-in-out;
+	-o-transition: background 0.3s ease-in-out;
+}
+.read:hover,.read:active,.read:focus{
+	color: #fff;
+	background:transparent url(../images/website/read1.png) no-repeat;
+	background-size: contain;
+	box-shadow: none;
+}
+
+#pagination{
+	text-align: center;
+}
+#pagination a {
+	display: inline-block;
+	background-color: #ddd;
+	border-radius: 3px;
+	padding: 8px;
+	text-decoration: none;
+	color: #7f8c97;
+}
+.articlelist-item-head h4{
+	background:url(../images/website/titlebg.png)no-repeat;
+	background-size:100% 100%;
+}
+.con h4{
+	padding: 16px 0 16px 50px;
+	color: #fff;
+	background:url(../images/website/titlebg.png)no-repeat;
+	background-size:100% 100%;
+}
+h4.gamev{
+	background: url(../images/website/menu-gamev.png)no-repeat -3px 0px,url(../images/website/titlebg.png)no-repeat;
+	background-size: contain,100% 100%;
+}
+h4.update{
+	background: url(../images/website/menu-update.png)no-repeat -3px 0px,url(../images/website/titlebg.png)no-repeat;
+	background-size: contain,100% 100%;
+}
+h4.raiders{
+	background: url(../images/website/menu-raiders.png)no-repeat -3px 0px,url(../images/website/titlebg.png)no-repeat;
+	background-size: contain,100% 100%;
+}
+h4.intro{
+	background: url(../images/website/menu-intro.png)no-repeat -3px 0px,url(../images/website/titlebg.png)no-repeat;
+	background-size: contain,100% 100%;
+}
+h4.freshman{
+	background: url(../images/website/menu-freshman.png)no-repeat -3px 0px,url(../images/website/titlebg.png)no-repeat;
+	background-size: contain,100% 100%;
+}
+h4.comic{
+	background: url(../images/website/menu-comic.png)no-repeat -3px 0px,url(../images/website/titlebg.png)no-repeat;
+	background-size: contain,100% 100%;
+}
+/*第二列article*/
+.con{
+	color: #624848;
+	background: #FAFAFA none repeat scroll 0px 0px;
+	border: 4px double #BCB2A3;
+	padding: 8px;
+	font-size: 14px;
+}
+
+.helperContent {
+	margin:10px 0;
+	clear: both;
+	line-height: 25px;
+	white-space: pre-wrap; 
+	border:none;
+}
+.helperContent img{
+	max-width: 100%;
+	height: auto;
+}
+
+/* 第三列 */
+.panel-body ul,.panel-body li{
+	padding: 5px 0;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	position:relative;
+}
+
+.panel-primary>.panel-heading{
+	color:#3C362E;
+	background: transparent url(../images/website/panel-top.png) no-repeat;
+	background-size: 100% 105%;
+	padding: 25px 15px 0px;
+	text-align: center;
+	border: 4px double #AFA588;
+	border-bottom: none;
+
+}
+.panel-body{
+	padding: 5px 10px;
+	background-size: 100%;
+	border: 4px double #AFA588;
+	border-top: none;
+
+}
+.TOP .panel-body a{
+	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+	color: #2b2b2b;
+	font-size: 12px;
+	display:inline-block;
+	width:77%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.TOP .panel-body a:hover{
+	text-decoration: none;
+	color: #396388;
+}
+.TOP .panel-body span{
+	color: #626262;
+	display:inline-block;
+	position:absolute;;
+	right:0;
+	font-size: 12px;
+}
+.TAGS .panel-body{
+	line-height: 25px;	
+}
+
+.TAGS .panel-body a {
+  display: inline-block;
+  margin: 4px;
+  padding: 0 10px;
+  color: #2b2b2b;
+  white-space: nowrap;
+  background: url(../images/website/tagbg.png) no-repeat right;
+  background-size: contain;
+  border: 1px solid #BCB2A3;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+.panel-footer{
+	background: transparent url(../images/website/panel-footer.png) no-repeat;
+	background-size: 100% 100%;
+	border-bottom: none;
+	border: none;
+}
+
+.tab-content{
+	padding:20px;
+	background: #fff;
+
+}
+
+.alert{
+	text-align: center;
+}
+.slider{
+	margin: 10px 12px 0 12px;
+}
+.slider ul{
+	padding: 0;margin: 0
+}
+.slider a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+.slider img{
+	width: 100%;
+}
+.slider .swiper-button-prev{
+	width: 40px;
+	background: url(../images/left_btn.png) no-repeat;
+	background-size: contain;
+}
+.slider .swiper-button-next{
+	width: 40px;
+	background: url(../images/right_btn.png) no-repeat;
+	background-size: contain;
+}
+.slider .swiper-button-next.swiper-button-disabled, .slider .swiper-button-prev.swiper-button-disabled{
+	pointer-events:auto;
+}
+.panel {
+	margin-bottom:10px;
+}
+.col-xs-12{
+	padding:0;
+}
+
+.time-p{
+    margin: 0 0 5px 0;
+    width: 120px;
+    background: #BCB2A3;
+    text-align: center;
+    padding: 0 5px;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 1px 1px 5px #111;
+    float: left;
+}
+.Weiboer{
+	background:url(../images/weibo.png) no-repeat;
+	width:100%;
+	height:105px;
+	background-size:100%
+}
+
+.announce{
+	margin: 10px 2% 12px;
+	overflow: hidden;
+}
+.genki-announcement{
+	overflow: hidden;
+  	white-space: nowrap;
+  	text-overflow: ellipsis;
+  	font-size: 18px;
+
+}
+.genki-announcement li{
+	position: relative;
+    overflow: hidden;
+}
+.genki-announcement span{
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: 10px;
+    top: 3px;
+    background: #BCB2A3;
+    width: 1px;
+    height: 22px;
+    height: 113px;
+}
+.genki-announcement a{
+	line-height: 20px;
+	color: #fff;
+    text-shadow: 1px 1px 5px #111;
+	font-size: 13px;
+  	padding:5px 15px;
+	font-weight: bold;
+	width: 48%;
+	overflow: hidden;
+	background:#BCB2A3;
+	display: inline-block;
+}
+.genki-announcement a:first-child{
+	margin-right: 2%;
+}
+.genki-announcement a:last-child{
+	margin-left: 2%;
+}
+.genki-announcement a:hover{
+	color: #eee;
+	text-decoration: none;
+}
+/* 分页 */
+.page_navi{overflow:hidden;width:100%;text-align:center;margin-bottom: 10px;}
+.page_navi a{height:36px;border:1px solid #DDD;color:#888;text-decoration:none;line-height:36px;margin:2px;padding:5px 8px 3px;}
+.page_navi a:hover,.page_navi a.current{border: 1px solid #AFA588;color: #3C362E;;font-weight:bolder}
+.page_navi .icons_head{margin: 0;}

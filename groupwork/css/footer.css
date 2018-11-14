@@ -1,0 +1,9 @@
+.footborder{background:#fff;margin-top:10px;border-top: 3px double #AFA588;width: 100%}
+/*.footlogo{height: 140px;background:url(../images/pc_spec_logo.png) no-repeat bottom;background-size: 100%;}*/
+/*.footborder ul{margin-top: 20px;font-family: }*/
+.footborder span{font-size: 18px}
+.footabout{text-align: center;margin-top: 5px;border-top: 1px solid #AFA588;padding-top: 5px}
+.diamond{width: 80px;height: 80px;margin: 40px 0 0 40px;-webkit-transform-origin: 0 100%;-moz-transform-origin: 0 100%;-o-transform-origin: 0 100%;-ms-transform-origin: 0 100%;transform-origin: 0 100%;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);background: #E5C3B2;}
+/*.snsicon li{float: left;width: 65px;height: 65px;background:url(../images/snsico.png) no-repeat;background-size: 100%;margin-top: 15px;margin-right: 5px}*/
+/*.snsicon li:hover{float: left;width: 65px;height: 65px;background:url(../images/snsico_a.png) no-repeat;background-size: 100%}*/
+.footborder ul li{font-family: 'minijianchusong2f17192854e52'}

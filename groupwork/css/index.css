@@ -1,0 +1,145 @@
+@font-face {
+      font-family: "AppFont";
+      src:url('AppFont.ttf');
+    }
+   @font-face {
+      font-family: "TextFont";
+      src:url('font.ttf');
+    }
+html, body {
+	height: 100%;
+	width: 100%;
+	background:url("../images/bg.jpg");
+}
+#wrap {
+	height: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-flex-flow: column;
+	flex-flow: column;
+}
+#main {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+}
+#footer {
+	width: 100%;
+	text-align: center;
+	height: 65px;
+	line-height: 64px;
+	background-image:url("../images/2-1.png");
+	background-size:100% 65px;
+}
+ul {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	width:100%;
+}
+.topbar{
+	position: relative;
+	background: #ccc;
+}
+.topbar .filter{
+	position: absolute;
+	bottom: 3px;
+	right:12px;
+	width: 25px;
+	height: 25px;
+	background: url("../images/list.png") no-repeat center;
+	background-size: 100%;
+}
+.topbar .back{
+	position: absolute;
+	left: 2px;
+	height: 50px;
+	width: 30px;
+	font-size: 25px;
+	font-weight: bold;
+	padding-right: 20px;
+	display: none;
+}
+.altas {
+	background-image: url("../images/2-1-2off.png");
+	background-position: bottom right;
+}
+.read {
+	background-image: url("../images/2-1-3off.png");
+	background-position: bottom left;
+}
+.index{
+	background-image: url("../images/2-1-1off.png");
+	background-position: center center;
+	height:65px !important;
+	line-height: 65px !important;
+}
+
+#footer li {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+	height: 65px;
+}
+.bottom_btn {
+	font-size: 16px;
+	color: #727272;
+	display:block;
+	height:50px;
+	line-height: 50px;
+	background-repeat: no-repeat no-repeat;
+	background-size: 37%;
+}
+.active .altas {
+	background-image: url("../images/2-1-2on.png");
+
+
+}
+.active .read {
+	background-image: url("../images/2-1-3on.png");
+
+}
+.active .index {
+	background-image: url("../images/2-1-1on.png");
+
+}
+
+.active .bottom_btn {
+	background-size: 37%;
+}
+.topbar {
+	background: #0a76a2;
+	height: 35px;
+	border-bottom: 1px solid #d8d8d8;
+	line-height: 35px;
+	text-align: center;
+	display: block;
+	color:white;
+	font-family: "TextFont";
+}
+}
+
+.topbar span{
+	color: #fff;
+}
+.topbar .selected{
+	font-weight: bold;
+}
+.activebar {
+	display: block !important;
+}
+.selected{
+color:#ECD520;
+
+}
+.list-on{
+	position:absolute;bottom: 13px;right:12px;width: 25px;
+}
+.list-on:active{
+	color:#0080ff;
+}
+
+	
+	
